@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+     <div class="row text-center">
+        <p>Hello {{ current_user.username }} ,
+             below are your Real Estate Properties 
+        </p>
+        <div class="col-md-6">
+            <p><img src="{{url_for('static',filename='images/download.jpg')}}" style="width: 400px;" alt="House"></p>
+
+            <p><img src="{{url_for('static',filename='images/download(1).jpg')}}" style="width: 400px;" alt="House1"></p>
+        </div>
+        <div class="col-md-6">
+            <p><img src="{{url_for('static',filename='images/download(2).jpg')}}"  style="width: 400px;" alt="House2"></p>
+
+            <p><img src="{{url_for('static',filename='images/download(3).jpg')}}"  style="width: 400px;" alt="House3"></p>
+        </div>        
+     </div>
+{% endblock %}
